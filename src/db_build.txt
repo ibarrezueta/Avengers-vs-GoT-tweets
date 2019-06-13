@@ -1,0 +1,14 @@
+/* 12 April 2019 */
+
+/*Creates a database containing a table of the users and a details of tweets*/
+
+drop table Tweets;
+create table Tweets(
+tweetID INTEGER PRIMARY KEY autoincrement,
+username varchar NOT NULL,
+tweetLocation varchar,
+tweetTime datetime NOT NULL,
+tweetText varchar NOT NULL,
+hashtag varchar,
+isRetweet boolean
+);
